@@ -1,0 +1,305 @@
+body {
+  margin: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+   min-height: 100vh;
+   display: flex;
+   background-color: white;
+}
+#root {
+  display: flex;
+  flex-grow: 1;
+}
+
+
+* {
+  margin: o;
+  padding: o;
+  box-sizing: border-box;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  background-image: url("../public/blog\ background\ 7.jpg");
+  
+}
+
+header,footer{
+ background-image: url("../public/pin\ 17.jpg");
+  width: 100%;
+  min-height: 50px;
+}
+header h1{
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+}
+.Nav{
+  background-color: cadetblue;
+  width: 100%;
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  justify-content: flex-start;
+
+}
+.Nav label{
+  font-size: 15px;
+  font-family: fantasy;
+  color: white;
+ padding-right: 10px;
+}
+.Nav ul {
+  
+  list-style-type: none;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  
+ 
+}
+
+.Nav li a{
+  text-decoration: none;
+  padding: 5px;
+  font-family: fantasy;
+  font-size: 18pxpx;
+  color: whitesmoke;
+  font-family: fantasy;
+}
+.navForm{
+  width: 80%;
+  padding: 1rem 0 0 0.75rem;
+}
+.Nav input[type ="text"]{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  width: 50%;
+  min-height: 48px;
+  font-size: 1rem;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  outline: none;
+}
+.Nav li:hover,nav li a:hover{
+ text-decoration:underline;
+ background-color: black;
+ 
+}
+.Nav li:hover, 
+.Nav li:focus {
+  padding: 1rem;
+}
+.Home,.PostPage,.NewPost,.About,.editpage,.creator{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+.post{
+  border: 3px solid white;
+  width: 70%;
+  border-radius: 6px;
+  background-image: url("../public/blog\ background\ 2.jpg");
+  margin-bottom: 5px;
+  border-style: groove;
+  min-height: 40px;
+}
+
+footer{
+  display: grid;
+  place-content: center;
+}
+footer p{
+  font: 1em sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+}
+.post a{
+  text-decoration: none;
+}
+.footdiv{
+  background-image: url("../public/pin\ 9.jpg");
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
+  border-bottom: 5px solid white;
+}
+.ul1{
+ list-style: none;
+ display: flex;
+ flex-direction: column;
+ margin-right: 30px;
+ justify-content: flex-start;
+ align-items: center;
+}
+.ul1 li{
+  color: white;
+  font-size: 18px;
+  font-size: bold;
+  padding: 3px;
+}
+.aboutp{
+  font-size: 40px;
+  stroke: 20px;
+  font-style: oblique;
+  padding-top: 30px;
+}
+.ul2{
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start; 
+  
+}
+.tittle{
+  color: black;
+  font-family: fantasy;
+}
+
+.blogcontent{
+  color:blue;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 22px;
+  stroke: black;
+  stroke-width: 2px;
+}
+.twitter{
+ size-adjust: 5px;
+}
+.date{
+  color: black;
+  font-size: 12px;
+
+}
+.newpostform{
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  
+}
+
+.newpostform input[type="text"]{
+  height: 50px;
+  border-radius: 6px;
+  padding: 25px;
+  font-size: 18px;
+  font-weight: bold;
+  outline: none;
+}
+.newpostform textarea{
+  height: 200px;
+  margin-bottom: 10px;
+  border-radius: 7px;
+  outline: blue;
+  border: 3px solid black;
+  font-size: 18px;
+}
+label{
+  font-size: 15px;
+  font-weight: bold;
+  stroke:  blueviolet;
+  color: white;
+}
+button{
+  padding: 6px;
+  font-size: 13px;
+  font-weight: bold;
+  background-color: cadetblue;
+  color: white;
+  border-style: none;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  width: 30%;
+  align-self: center;
+  height: 40px;
+}
+
+button:hover{
+  cursor: pointer;
+  opacity: 0.7;
+  box-shadow: black;
+  transition: 0.7s;
+
+}
+button:active{
+  background-color: black;
+}
+.postpageb{
+  font-size: 20px;
+  color: black;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+
+}
+.postpagearticle{
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-start;
+ align-items: flex-start;
+}
+.Postpaged{
+  font-size: 12px;
+  font-family: 'Times New Roman', Times, serif;
+ color: white;
+}
+.ppb{
+  width: 10%;
+  align-self: flex-end;
+  background-color: red;
+  padding: 5px;
+}
+.editb{
+  border-style: none;
+  border-radius: 6px;
+  background-color: cadetblue;
+  padding: 7px;
+  
+  
+}
+.editb :hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+.contactus{
+  
+  font-family: fantasy;
+}
+.ul2 a{
+  text-decoration: none;
+  font-family: fantasy;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.nav2{
+  width:30% ;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.ul2 a:hover{
+  text-decoration: underline;
+  color: white;
+}
+.creatorcontent{
+  stroke: blue;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+
+}
+.PostPage{
+background-color: white;
+}
